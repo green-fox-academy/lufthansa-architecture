@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="projectSyncType">
+      <map>
+        <entry key="$USER_HOME$/Downloads/demo" value="PREVIEW" />
+        <entry key="$USER_HOME$/Downloads/finder" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../../DevMa/huli-devma" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../../alopex-orientation-retake-exam" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../../badboi-syllabus/week-07/blog" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../../badboi-syllabus/week-07/helloworld" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../../badboi-syllabus/week-07/todo" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../../badboi-syllabus/week-08/day-02/todo" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../../badboi-syllabus/week-08/reddit" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../../badboi-syllabus/week-09/p2pchat" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../../blog" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../../foxclub" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../../huli/TeachingMaterialQueryService" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../../prg-ferrilata-syllabus/Material Review/week09/day02/caloriecounter" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../../solutions/project/reddit-template" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../../tmp/ferrilata-siesta/DaliborDr" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../../tmp/ferrilata-siesta/LubosTran" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../../tmp/ferrilata-siesta/LukasKrocek" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../../tmp/ferrilata-siesta/McGeorgan" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../../tmp/ferrilata-siesta/StandaK2/pixamexpress" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../../tmp/ferrilata-siesta/alesfrancisko" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../../tmp/ferrilata-siesta/buresj" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../../tmp/ferrilata-siesta/hrchvlc" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../../tmp/ferrilata-siesta/jansorna" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../../tmp/ferrilata-siesta/langis1/Pixam" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../../tmp/ferrilata-siesta/martinsvatek" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../../tmp/ferrilata-siesta/matuspasko/exam" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../../tmp/ferrilata-siesta/nhenikova" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../../tmp/ferrilata-siesta/notsunek" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../../tmp/ferrilata-siesta/olsanska" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../../tmp/ferrilata-siesta/ondrej-ivanko" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../../tmp/ferrilata-siesta/tmasner" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../../tmp/java-koans-master/koans" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../../tmp/orient/SomodiEmese" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../../tmp/orient/adambota" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../../tmp/orient/chumpellina/attractions" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../../tmp/orient/cserjesa" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../../tmp/orient/daniboy01/touristinfo" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../../tmp/orient/kovkrasz" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../../tmp/orient/nagykrisztina/TouristInformation" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../../tmp/orient/varistvan/touristinfo" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../../tmp/orient/zsofizsofi" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../../tmp/rueppellii-orientation-exam-chika" value="PREVIEW" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1838" />
+    <option name="height" value="1096" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
