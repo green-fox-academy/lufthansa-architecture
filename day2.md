@@ -44,7 +44,7 @@ Creating automated tests for web APIs.
 
 ### Mocking
 
-Here is a simple Java class which depends on another class and the task is to create a few tests for the class using Mockito.
+Here is a [simple Java app](./workshop/mockingpunkapi) using the Punk API. The `BeerStatistics` class which depends on the `PunkAPI` class and the task is to create a few unit tests for the class using Mockito.
 
 ### Testing REST APIs
 
