@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<message>
+    <title>Hello</title>
+    <body>Hello from the XML</body>
+    <attachments>
+        <files type="image">hello.jpg</files>
+        <files type="image">howdy.png</files>
+        <files type="signature">sign.pgp</files>
+    </attachments>
+</message>

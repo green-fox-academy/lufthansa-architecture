@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>Calorie counter</h1>
+
+    <ul>
+        <li th:each="food : ${foods}">
+            <span th:text="${food.name}"></span>
+            -
+            <span th:text="${food.amount}"></span>
+        </li>
+    </ul>
+
+    <h2>Add new food</h2>
+
+    <form action="/save" method="post">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name">
+        <br>
+
+
+        <label for="amount">Amount</label>
+        <input type="text" name="amount" id="amount">
+        <br>
+
+        <button type="submit">Add</button>
+    </form>
+</body>
+</html>
