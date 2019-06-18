@@ -1,0 +1,48 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://example.com/root.json",
+  "type": "array",
+  "title": "The Root Schema",
+  "items": {
+    "$id": "#/items",
+    "type": "object",
+    "title": "The Items Schema",
+    "required": [
+      "name",
+      "subredditURL",
+      "postCount"
+    ],
+    "properties": {
+      "name": {
+        "$id": "#/items/properties/name",
+        "type": "string",
+        "title": "The Name Schema",
+        "default": "",
+        "examples": [
+          "programming"
+        ],
+        "pattern": "^(.*)$"
+      },
+      "subredditURL": {
+        "$id": "#/items/properties/subredditURL",
+        "type": "string",
+        "title": "The Subredditurl Schema",
+        "default": "",
+        "examples": [
+          "http://localhost:8080/api/subreddits/1"
+        ],
+        "pattern": "^(.*)$"
+      },
+      "postCount": {
+        "$id": "#/items/properties/postCount",
+        "type": "integer",
+        "title": "The Postcount Schema",
+        "default": 0,
+        "examples": [
+          2
+        ]
+      }
+    }
+  }
+}

@@ -52,7 +52,7 @@ Open the RedditAPI project from yesterday. You're going to create several tests 
 
 ### Add REST Assured library
 
-ADd the dependencies to the `gradle.build` file.
+Add the dependencies to the `gradle.build` file.
 
 ```groovy
 dependencies {
@@ -99,6 +99,36 @@ In the following test use the REST Assured library for the following scenarios:
 - The returned objects have the correct values
 
 Let's create a test where you mock the whole repository layer so there is no real database call.
+
+## Measure and assert response time
+
+Create a test to assert that the response time is in within a certain time range.
+
+```java
+when().
+      get("/lotto").
+then().
+      time(lessThan(2000L)); // Milliseconds
+```
+
+## Use JSON Schema validation
+
+Add the dependencies to the `gradle.build` file.
+
+```
+    testCompile 'io.rest-assured:json-schema-validator:4.0.0'
+```
+
+JSON Schema is a description of the JSON data structure, you can generate one online, e.g. at https://jsonschema.net/.
+
+After you have the JSON Schema in your project you can use JSON Schema Validation:
+
+```java
+get("/api/posts")
+  .then()
+  .assertThat()
+  .body(matchesJsonSchemaInClasspath("posts-schema.json"));
+```
 
 ## Test the login endpoint
 

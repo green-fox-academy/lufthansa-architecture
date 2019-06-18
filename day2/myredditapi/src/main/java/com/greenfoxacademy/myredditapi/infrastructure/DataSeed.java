@@ -7,12 +7,14 @@ import com.greenfoxacademy.myredditapi.repositories.UserRepository;
 import com.greenfoxacademy.myredditapi.repositories.UserVoteRepository;
 import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Component;
 
 import java.util.Arrays;
 import java.util.List;
 
 @Component
+@Profile("!test")
 public class DataSeed implements ApplicationRunner {
   private SubredditRepository subredditRepository;
   private PostRepository postRepository;
