@@ -18,7 +18,7 @@ public class UserService {
   }
 
   public User getCurrentUser() {
-    Optional<User> optionalUser = userRepository.findByName(session.get("username"));
+    Optional<User> optionalUser = userRepository.findByName(getUsernameFromSession());
 
     return optionalUser.orElse(null);
   }
@@ -34,5 +34,13 @@ public class UserService {
 
     session.set("username", name);
     return user;
+  }
+
+  public boolean isAuthenticated() {
+    return getUsernameFromSession() != null;
+  }
+
+  private String getUsernameFromSession() {
+    return session.get("username");
   }
 }

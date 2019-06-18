@@ -4,7 +4,9 @@ import com.greenfoxacademy.myredditapi.dto.PostDTO;
 import com.greenfoxacademy.myredditapi.infrastructure.URLs;
 import com.greenfoxacademy.myredditapi.models.UserVoteDirection;
 import com.greenfoxacademy.myredditapi.services.PostService;
+import com.greenfoxacademy.myredditapi.services.UserService;
 import com.greenfoxacademy.myredditapi.services.VoteService;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -17,10 +19,12 @@ public class PostAPIController {
 
   private PostService postService;
   private VoteService voteService;
+  private UserService userService;
 
-  public PostAPIController(PostService postService, VoteService voteService) {
+  public PostAPIController(PostService postService, VoteService voteService, UserService userService) {
     this.postService = postService;
     this.voteService = voteService;
+    this.userService = userService;
   }
 
   @GetMapping
@@ -68,6 +72,10 @@ public class PostAPIController {
 
   @PutMapping("{id}/vote")
   public ResponseEntity put(@PathVariable(name = "id") long postId, @RequestBody VoteInput voteInput) {
+
+    if (!userService.isAuthenticated()) {
+      return ResponseEntity.status(HttpStatus.FORBIDDEN).build();
+    }
 
     String directionString = voteInput.direction;
 

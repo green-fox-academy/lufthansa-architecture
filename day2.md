@@ -151,3 +151,27 @@ Response:
 OR
 
 - `401 Unauthorized`
+
+### Test the Votes API 💪
+
+The votes API requires a logged in user.
+
+`PUT /api/posts/{id}/vote`
+
+**Request Headers**
+
+`Content-Type: application/json`
+
+**Request Payload**
+
+```json
+{
+    "direction": "up"|"down"
+}
+```
+
+**Response**
+
+- `204 No Content` if succeeded
+- `400 Bad Request` if `id` or `direction` is not valid
+- `403 Forbidden` if the user is not logged in

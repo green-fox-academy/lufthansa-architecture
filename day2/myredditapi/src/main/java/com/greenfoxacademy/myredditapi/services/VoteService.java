@@ -1,6 +1,5 @@
 package com.greenfoxacademy.myredditapi.services;
 
-import com.greenfoxacademy.myredditapi.dto.PostDTO;
 import com.greenfoxacademy.myredditapi.models.Post;
 import com.greenfoxacademy.myredditapi.models.User;
 import com.greenfoxacademy.myredditapi.models.UserVote;
