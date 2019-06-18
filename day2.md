@@ -99,3 +99,55 @@ In the following test use the REST Assured library for the following scenarios:
 - The returned objects have the correct values
 
 Let's create a test where you mock the whole repository layer so there is no real database call.
+
+## Test the login endpoint
+
+Create a test which calls the login endpoint then check if the current user is successfully logged in.
+Create another test which calls the current user API without login and check if the response is 401.
+
+### Login
+
+`POST /login`
+
+Payload:
+
+```json
+{
+  "name": "Petike"
+}
+```
+
+Response:
+
+- `200 OK`
+
+```json
+{
+    "authToken": "732ff80f-3630-400c-a377-a238f9f977c4"
+}
+```
+
+### Get currently logged in User
+
+Expects the auth token in the `X-AUTH-TOKEN` header.
+
+`GET /api/users/me`
+
+Request Headers:
+
+`X-AUTH-TOKEN: 732ff80f-3630-400c-a377-a238f9f977c4`
+
+Response:
+
+- `200 OK`
+
+```json
+{
+    "id": 1,
+    "name": "Petike"
+}
+```
+
+OR
+
+- `401 Unauthorized`

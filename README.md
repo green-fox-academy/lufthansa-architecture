@@ -19,3 +19,36 @@ Please install the following software:
 
 - [Day 1: Web app architecture, REST](./day1.md)
 - [Day 2: How to test web applications, Mocking, REST assured](./day2.md)
+
+## Typical problems
+
+### Lufthansa proxy settings
+
+**Git**
+
+Edit your `.gitconfig` file in your HOME directory:
+
+```
+[http]
+    proxy = http://Uxxxxxx:password@proxy.lsy.bud.dlh.de:3128
+    sslVerify = false
+```
+
+https://gist.github.com/evantoli/f8c23a37eb3558ab8765
+
+**Gradle**
+
+https://stackoverflow.com/questions/5991194/gradle-proxy-configuration
+
+Open `gradle/wrapper/gradle-wrapper.properties`
+
+```
+systemProp.http.proxyHost=proxy.lsy.bud.dlh.de
+systemProp.http.proxyPort=3128
+systemProp.https.proxyHost=proxy.lsy.bud.dlh.de
+systemProp.https.proxyPort=3128
+```
+
+### JAXB is deprecated
+
+JAXB is deprecated in Java 9 and removed in 11.
