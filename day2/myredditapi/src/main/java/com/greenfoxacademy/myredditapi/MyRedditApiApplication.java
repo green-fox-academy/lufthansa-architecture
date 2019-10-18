@@ -11,6 +11,7 @@ import org.springframework.web.servlet.handler.HandlerInterceptorAdapter;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.time.Clock;
 import java.util.UUID;
 
 @SpringBootApplication
@@ -28,6 +29,11 @@ public class MyRedditApiApplication implements WebMvcConfigurer {
   @Bean
   public SessionInterceptor sessionInterceptor() {
     return new SessionInterceptor();
+  }
+
+  @Bean
+  public Clock clock() {
+    return Clock.systemUTC();
   }
 }
 

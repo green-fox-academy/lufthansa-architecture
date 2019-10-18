@@ -9,6 +9,7 @@ import com.greenfoxacademy.myredditapi.repositories.UserVoteRepository;
 import org.springframework.beans.BeanUtils;
 import org.springframework.stereotype.Service;
 
+import java.time.Clock;
 import java.time.Instant;
 import java.util.List;
 import java.util.Optional;
@@ -20,15 +21,18 @@ public class PostService {
   private PostRepository postRepository;
   private UrlProvider urlProvider;
   private UserVoteRepository userVoteRepository;
+  private Clock clock;
 
   public PostService(SubredditRepository subredditRepository,
                      PostRepository postRepository,
                      UrlProvider urlProvider,
-                     UserVoteRepository userVoteRepository) {
+                     UserVoteRepository userVoteRepository,
+                     Clock clock) {
     this.subredditRepository = subredditRepository;
     this.postRepository = postRepository;
     this.urlProvider = urlProvider;
     this.userVoteRepository = userVoteRepository;
+    this.clock = clock;
   }
 
   public List<PostDTO> findAll() {
@@ -46,7 +50,7 @@ public class PostService {
 
     Post post = new Post(postDTO.title, postDTO.url, subreddit);
 
-    post.setAddedAt(Instant.now());
+    post.setAddedAt(clock.instant());
 
     postRepository.save(post);
   }
